@@ -43,7 +43,7 @@ public class Pedidos {
 	@Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("Viagem: ").append(viagem).append("\n");
+        builder.append("Situação: ").append(viagem).append("\n");
         builder.append("Quantidade de Itens: ").append(calcularQtd()).append("\n");
         builder.append("\nItens:\n");
         for (Itens item : itens) {

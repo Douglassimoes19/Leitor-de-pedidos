@@ -5,6 +5,7 @@ public class Itens {
 	private double precoItem;
 
 	public Itens() {}
+	
 	public Itens(String nomeItem, Double precoItem) {
 		this.nomeItem = nomeItem;
 		this.precoItem = precoItem;
@@ -25,6 +26,6 @@ public class Itens {
 	
 	@Override
 	public String toString() {
-		return nomeItem + "        $" + String.format("%.2f", precoItem);
+		return String.format("%-20s %10.2f", nomeItem, precoItem);
 	}
 }
